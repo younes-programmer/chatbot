@@ -1,0 +1,71 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "Networking",
+      "patterns": [
+        "What is a computer network?",
+        "can you explain network",
+        "network",
+        "help me with networking"
+      ],
+      "responses": [
+        "A computer network is a set of computers sharing resources located on or provided by network nodes.",
+        "wo or more computers that are connected with one another for the purpose of communicating data electronically."
+      ]
+    },
+    {
+      "tag": "Algorithm",
+      "patterns": [
+        "What is an algorithm",
+        "How algorithm works",
+        "Explain algorithms"
+      ],
+      "responses": [
+        "An algorithm is a procedure used for solving a problem or performing a computation. Algorithms act as a precise list of instructions that conduct specified actions step by step in either hardware- or software-based",
+        "An algorithm is a set of instructions for solving a problem or accomplishing a task"
+      ]
+    },
+    {
+      "tag": "Deep Learning",
+      "patterns": [
+        "What is deep learning",
+        "how deep learning works"
+      ],
+      "responses": [
+        "Deep learning is part of a broader family of machine learning methods based on artificial neural networks with representation learning. Learning can be supervised, semi-supervised or unsupervised.",
+        "Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge."
+      ]
+    }
+  ]
+}
