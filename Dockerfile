@@ -1,9 +1,13 @@
-From python:3.9-alpine
+FROM python:3.9
 
-WORKDIR /EducatifChatbot
+COPY requirements.txt .
 
-ADD . /EducatifChatbot
+RUN pip install -r requirements.txt
 
-RUN pip3 install Flask nltk torch==1.11.0+cu102 torchvision==0.12.0+cu102 -f https://download.pytorch.org/whl/torch_stable.html
+RUN python -c "import nltk; nltk.download('punkt')"
 
-CMD ["python","main.py"]
+COPY . .
+
+EXPOSE 5000
+
+CMD ["flask", "run", "--host=0000", "--port=5000"]
